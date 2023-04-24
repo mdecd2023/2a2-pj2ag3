@@ -201,3 +201,21 @@ bubbleRobBase=18 ball=23這是用程式測出來的距離 sysCall_init() 函數�
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/L9XOADGOzjw" title="YouTube video player" width="560"></iframe></p>
 <p></p>
 <h1>w10</h1>
+<p>41023118 負責第1、2題</p>
+<p><span>41023120 負責第3</span><span>題</span></p>
+<p><span>41023122 負責第5題</span></p>
+<p><span>41023124 負責第4題</span></p>
+<p><span></span></p>
+<p><span>1.</span>What is zmqRemoteAPI, and how does it relate to CoppeliaSim?</p>
+<p>zmqRemoteAPI是一個通訊接口，允許外部程序與機器人仿真軟件CoppeliaSim進行交互。它基於ZeroMQ庫，為遠程應用程序提供了一種輕量級和高效的方式來訪問CoppeliaSim的功能。</p>
+<p>使用zmqRemoteAPI，用戶可以使用各種編程語言（如Python、C++和Lua）控制和監視CoppeliaSim中的仿真。該接口允許外部程序和仿真之間交換數據，使用戶可以創建自定義腳本和應用程序來擴展CoppeliaSim的功能。</p>
+<p>總之，zmqRemoteAPI是一個通訊接口，使外部程序能夠與CoppeliaSim進行通訊，為用戶提供了一種靈活和高效的方式來控制和監視軟件中的仿真。</p>
+<p>2.How do you establish a connection between a Python script and CoppeliaSim using zmqRemoteAPI?</p>
+<p>在CoppeliaSim場景中添加一個Remote API Server對象，可以在CoppeliaSim中通過Add-ons &gt; Remote API Server選項添加。</p>
+<p>在Python中使用zmq模組建立一個socket，並連接到CoppeliaSim的Remote API Server。需要指定CoppeliaSim的IP地址和端口號。</p>
+<p>發送指令給CoppeliaSim，例如運動控制、數據讀寫等操作。</p>
+<p>接收來自CoppeliaSim的回傳信息，例如機器人的位置、碰撞情況等。</p>
+<p>在Python中可以使用vrep.py或vrepConst.py這些API函數庫，可以方便地使用zmqRemoteAPI與CoppeliaSim進行通信。使用zmqRemoteAPI可以輕鬆實現Python與CoppeliaSim之間的數據傳輸和控制操作，適用於控制仿真、數據傳輸、遠程控制、集成外部模塊等多種應用場景。</p>
+<p>3.What are some common use cases for zmqRemoteAPI in CoppeliaSim?</p>
+<p>4.What are the advantages and disadvantages of using zmqRemoteAPI compared to other methods of communication between Python and CoppeliaSim?</p>
+<p>5.Can you give an example of a project or task that you could complete using zmqRemoteAPI in CoppeliaSim?</p>
